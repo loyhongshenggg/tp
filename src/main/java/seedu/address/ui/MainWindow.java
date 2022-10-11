@@ -32,7 +32,7 @@ public class MainWindow extends UiPart<Stage> {
 
     // Independent Ui parts residing in this Ui container
     private PersonListPanel personListPanel;
-    private PolicyListPanel policyListPanel;
+    //private PolicyListPanel policyListPanel;
     private ResultDisplay resultDisplay;
     private HelpWindow helpWindow;
 
@@ -119,6 +119,8 @@ public class MainWindow extends UiPart<Stage> {
 
         //policyListPanel = new PolicyListPanel(logic.getFilteredPolicyList());
         //policyListPanelPlaceholder.getChildren().add(policyListPanel.getRoot());
+        // Wrong, supposed to feed the information into personListPanel,
+        // here you are creating a new list, which is an entirely new scene
 
         resultDisplay = new ResultDisplay();
         resultDisplayPlaceholder.getChildren().add(resultDisplay.getRoot());

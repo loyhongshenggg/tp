@@ -65,7 +65,7 @@ public class MainApp extends Application {
 
         logic = new LogicManager(model, storage);
 
-        ui = new UiManager(logic);
+        ui = new UiManager(logic); //logic here you may want to change to policy logic
     }
 
     /**
